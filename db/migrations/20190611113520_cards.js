@@ -6,6 +6,7 @@ exports.up = function(knex, Promise) {
     table.integer('attack');
     table.integer('health');
     table.text('description');
+    table.timestamps(true, true);
   })
 };
 

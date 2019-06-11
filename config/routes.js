@@ -4,4 +4,9 @@ module.exports = function(app){
 
   app.get('/', cards.index);
 
+  app.post('/cards', cards.create);
+
+  app.get('/cards/add/:id', cards.add);
+
+  app.get('/cards/remove/:id', cards.remove);
 }
